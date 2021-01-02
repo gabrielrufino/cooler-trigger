@@ -46,6 +46,8 @@ According to [that article](https://linuxhint.com/raspberry_pi_temperature_monit
 
 But, I decided to set 65 degrees celsius as the cooler deactivation threshold to increase the card’s lifetime.
 
+---
+
 ### Getting started
 
 #### Requirements
@@ -57,10 +59,16 @@ But, I decided to set 65 degrees celsius as the cooler deactivation threshold to
 * Git
 * Internet :)
 
-#### Cloning repo
+#### Cloning repo and install dependencies
 
-```
+```bash
 $ git clone https://github.com/gabrielrufino/cooler-trigger
 $ cd cooler-trigger
 $ npm install
+```
+
+#### Start Cooler Trigger in background
+
+```bash
+$ nohup npm start &
 ```

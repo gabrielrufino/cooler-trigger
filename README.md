@@ -7,11 +7,11 @@
 
 #### When temperature > deactivation threshold
 
-![Turning on](./assets/turning-on.gif)
+<img width="300px" src="./assets/turning-on.gif">
 
 #### When temperature < activation threshold
 
-![Turning off](./assets/turning-off.gif)
+<img width="300px" src="./assets/turning-off.gif">
 
 ### How did I get here?
 

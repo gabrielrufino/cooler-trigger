@@ -8,13 +8,13 @@
 #### When temperature > deactivation threshold
 
 <p align="center">
-  <img width="250px" src="./assets/turning-on.gif">
+  <img src="./assets/turning-on.gif">
 </p>
 
 #### When temperature < activation threshold
 
 <p align="center">
-  <img width="250px" src="./assets/turning-off.gif">
+  <img src="./assets/turning-off.gif">
 </p>
 
 ### How did I get here?

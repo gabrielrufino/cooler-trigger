@@ -1,0 +1,40 @@
+{
+  "name": "cooler-trigger",
+  "version": "1.0.0",
+  "description": "Give your Raspberry Pi some air",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielrufino/cooler-trigger.git"
+  },
+  "keywords": [
+    "raspberry pi",
+    "cooler",
+    "hardware",
+    "javascript",
+    "js",
+    "nodejs",
+    "temperature"
+  ],
+  "author": "Gabriel Rufino <contato@gabrielrufino.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielrufino/cooler-trigger/issues"
+  },
+  "homepage": "https://github.com/gabrielrufino/cooler-trigger#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "forever": "^3.0.4",
+    "p-wait-for": "^3.2.0",
+    "shelljs": "^0.8.4",
+    "systeminformation": "^4.33.5"
+  }
+}

@@ -3,7 +3,7 @@ const shell = require('shelljs')
 const si = require('systeminformation')
 
 const deactivationThreshold = 65
-const activationThreshold = 45
+const activationThreshold = 50
 
 async function setup() {
   shell.exec('sudo uhubctl -l 1-1 -p 2 -a 0')

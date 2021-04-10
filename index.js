@@ -32,4 +32,4 @@ async function main() {
 }
 
 setup()
-main()
+  .then(main)

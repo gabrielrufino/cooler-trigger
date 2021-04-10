@@ -1,3 +1,5 @@
+'use strict'
+
 const pWaitFor = require('p-wait-for')
 const shell = require('shelljs')
 const si = require('systeminformation')

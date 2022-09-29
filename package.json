@@ -1,13 +1,15 @@
 {
   "name": "cooler-trigger",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Give your Raspberry Pi some air",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "lint": "npx standard .",
+    "lint:fix": "npm run lint -- --fix",
     "start": "node index.js",
-    "test": "npm test"
+    "test": "jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
@@ -28,9 +30,11 @@
     "url": "https://github.com/gabrielrufino/cooler-trigger/issues"
   },
   "homepage": "https://github.com/gabrielrufino/cooler-trigger#readme",
+  "funding": "https://github.com/sponsors/gabrielrufino",
   "devDependencies": {
     "jest": "^26.6.3",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "standard": "^17.0.0"
   },
   "dependencies": {
     "forever": "^3.0.4",

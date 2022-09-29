@@ -31,7 +31,8 @@
   "funding": "https://github.com/sponsors/gabrielrufino",
   "devDependencies": {
     "jest": "^26.6.3",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "standard": "^17.0.0"
   },
   "dependencies": {
     "forever": "^3.0.4",

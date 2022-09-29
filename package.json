@@ -1,7 +1,7 @@
 {
   "name": "cooler-trigger",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Give your Raspberry Pi some air",
   "main": "index.js",
   "scripts": {

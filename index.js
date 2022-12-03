@@ -5,10 +5,12 @@ const shell = require('shelljs')
 const si = require('systeminformation')
 
 const DEACTIVATION_THRESHOLD = 65
+const DEACTIVATION_COMMAND = 'sudo uhubctl -l 1-1 -p 2 -a 0'
 const ACTIVATION_THRESHOLD = 50
+const ACTIVATION_COMMAND = 'sudo uhubctl -l 1-1 -p 2 -a 1'
 
 async function setup () {
-  shell.exec('sudo uhubctl -l 1-1 -p 2 -a 0')
+  shell.exec(DEACTIVATION_COMMAND)
 }
 
 async function main () {
@@ -18,7 +20,7 @@ async function main () {
     return main > DEACTIVATION_THRESHOLD
   })
 
-  shell.exec('sudo uhubctl -l 1-1 -p 2 -a 1')
+  shell.exec(ACTIVATION_COMMAND)
 
   await pWaitFor(async () => {
     const { main } = await si.cpuTemperature()
@@ -26,7 +28,7 @@ async function main () {
     return main < ACTIVATION_THRESHOLD
   })
 
-  shell.exec('sudo uhubctl -l 1-1 -p 2 -a 0')
+  shell.exec(DEACTIVATION_COMMAND)
 
   main()
 }

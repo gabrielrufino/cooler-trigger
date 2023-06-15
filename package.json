@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "lint": "npx standard .",
+    "lint": "npx eslint .",
     "lint:fix": "npm run lint -- --fix",
     "start": "node index.js",
     "test": "jest --passWithNoTests"
@@ -32,9 +32,10 @@
   "homepage": "https://github.com/gabrielrufino/cooler-trigger#readme",
   "funding": "https://github.com/sponsors/gabrielrufino",
   "devDependencies": {
+    "@gabrielrufino/eslint-config": "^1.4.0",
+    "eslint": "^8.42.0",
     "jest": "^26.6.3",
-    "nodemon": "^2.0.20",
-    "standard": "^17.0.0"
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "forever": "^4.0.3",
